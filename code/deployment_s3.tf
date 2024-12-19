@@ -25,7 +25,7 @@ resource "aws_s3_bucket_object" "data_object" {
   source = "resources/customer-master.xlsx"
 
   tags = {
-    git_commit           = "9b387b078b6b2b32b65501021d1ed720352b71eb"
+    git_commit           = "d4c35e0270bfd542051278ca30b4b3872c1ae0b2"
     git_file             = "code/deployment_s3.tf"
     git_last_modified_at = "2024-01-26 23:01:56"
     git_last_modified_by = "tprendervill@paloaltonetworks.com"
@@ -46,7 +46,7 @@ resource "aws_s3_bucket" "financials" {
   force_destroy = true
 
   tags = {
-    git_commit           = "9b387b078b6b2b32b65501021d1ed720352b71eb"
+    git_commit           = "d4c35e0270bfd542051278ca30b4b3872c1ae0b2"
     git_file             = "code/deployment_s3.tf"
     git_last_modified_at = "2024-01-26 23:01:56"
     git_last_modified_by = "tprendervill@paloaltonetworks.com"
@@ -69,7 +69,7 @@ resource "aws_s3_bucket" "operations" {
   force_destroy = true
 
   tags = {
-    git_commit           = "9b387b078b6b2b32b65501021d1ed720352b71eb"
+    git_commit           = "d4c35e0270bfd542051278ca30b4b3872c1ae0b2"
     git_file             = "code/deployment_s3.tf"
     git_last_modified_at = "2024-01-26 23:01:56"
     git_last_modified_by = "tprendervill@paloaltonetworks.com"
@@ -95,7 +95,7 @@ resource "aws_s3_bucket" "data_science" {
   force_destroy = true
 
   tags = {
-    git_commit           = "9b387b078b6b2b32b65501021d1ed720352b71eb"
+    git_commit           = "d4c35e0270bfd542051278ca30b4b3872c1ae0b2"
     git_file             = "code/deployment_s3.tf"
     git_last_modified_at = "2024-01-26 23:01:56"
     git_last_modified_by = "tprendervill@paloaltonetworks.com"
@@ -124,7 +124,7 @@ resource "aws_s3_bucket" "logs" {
   force_destroy = true
 
   tags = {
-    git_commit           = "9b387b078b6b2b32b65501021d1ed720352b71eb"
+    git_commit           = "d4c35e0270bfd542051278ca30b4b3872c1ae0b2"
     git_file             = "code/deployment_s3.tf"
     git_last_modified_at = "2024-01-26 23:01:56"
     git_last_modified_by = "tprendervill@paloaltonetworks.com"
