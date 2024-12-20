@@ -8,16 +8,16 @@ resource "aws_s3_bucket" "dev_s3" {
     Environment          = "Dev"
     yor_name             = "dev_s3"
     yor_trace            = "e92c023a-cc50-4dad-aa84-3275ceabfad7"
-    git_commit           = "7108ad23b5635593c75e6e20e9450caa6109a77d"
+    git_commit           = "1228fe2d192c01722d32656cb0bc97ebddcb64a1"
     git_file             = "code/build/s3.tf"
-    git_last_modified_at = "2024-12-20 09:47:46"
+    git_last_modified_at = "2024-12-19 13:08:52"
     git_last_modified_by = "praveenkumardpmtn@gmail.com"
     git_modifiers        = "praveenkumardpmtn"
     git_org              = "praveen8900A"
     git_repo             = "CICD_IAC_DMO"
   }
-  bucket = "dev-20241219131304598100000001"
-  server_side_encryption_configuration = {"rule": {"apply_server_side_encryption_by_default": {"sse_algorithm": "AES256"}}}
+  bucket                               = "dev-20241219131304598100000001"
+  server_side_encryption_configuration = { "rule" : { "apply_server_side_encryption_by_default" : { "sse_algorithm" : "AES256" } } }
 }
 
 
