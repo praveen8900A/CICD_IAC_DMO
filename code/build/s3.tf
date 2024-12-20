@@ -3,8 +3,6 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "dev_s3" {
-  bucket_prefix = "dev-"
-  acl           = "private"
 
   tags = {
     Environment          = "Dev"
@@ -18,7 +16,10 @@ resource "aws_s3_bucket" "dev_s3" {
     git_org              = "praveen8900A"
     git_repo             = "CICD_IAC_DMO"
   }
+  bucket = "dev-20241219131304598100000001"
+  server_side_encryption_configuration = {"rule": {"apply_server_side_encryption_by_default": {"sse_algorithm": "AES256"}}}
 }
+
 
 resource "aws_s3_bucket_ownership_controls" "dev_s3" {
   bucket = aws_s3_bucket.dev_s3.id
